@@ -16,17 +16,19 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
 
     public float jumpForce;
-
     public bool isFacingRight;
     public bool isAttacking;
     public bool attack1;
 
+    private Animator animator;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
+    
 
     void Update()
     {
@@ -63,13 +65,28 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        animator.SetBool("Idle", move == 0f);
+        animator.SetBool("IsGrounded", isGrounded);
+        animator.SetFloat("VerticalVelocity", rb.velocity.y);
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack1"))
+        {
+            isAttacking = true;
+        }
+        else
+        {
+            isAttacking = false;
+        }
+    }
+
     void Attack()
     {
 
-        isAttacking = !isAttacking;
-        // AttackAnim.Play();
-        isAttacking = !isAttacking;
-
+        
+       
+        
     }
 
 
