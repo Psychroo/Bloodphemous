@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isFacingRight;
     public bool isAttacking;
+    public bool attack1;
 
 
     // Start is called before the first frame update
