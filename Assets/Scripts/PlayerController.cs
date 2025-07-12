@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
 
     public bool isFacingRight;
+    public bool isAttacking;
 
 
     // Start is called before the first frame update
@@ -34,35 +35,42 @@ public class PlayerController : MonoBehaviour
         {
             if (isGrounded)
             {
-                
+
                 rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 
             }
 
         }
+
+        attack1 = Input.GetButtonDown("Fire1");
+
+        if (attack1 && isAttacking == false)
+        {
+                Attack();
+        }
+
     }
     void FixedUpdate()
     {
-        
-      
 
-            move = Input.GetAxisRaw("Horizontal");
-            rb.velocity = new Vector2(move * speed, rb.velocity.y);
-       
+        move = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
+        if ((move > 0.0f && isFacingRight == false)|| (move < 0.0f && isFacingRight == true))
+        {
+            Flip();
+        }
+    }
 
+    void Attack()
+    {
 
-
-
-
-
-        if ((move > 0.0f && isFacingRight == false)  (move < 0.0f && isFacingRight == true))
-
-
-
-
+        isAttacking = !isAttacking;
+        // AttackAnim.Play();
+        isAttacking = !isAttacking;
 
     }
+
 
     void Flip()
     {
