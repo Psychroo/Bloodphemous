@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     public int totalHealth = 3;
     public int health;
     public float interval = 1f;
+
+    private SpriteRenderer renderer;
     
 
     public static UnityEvent enemyKilled = new UnityEvent();
@@ -17,6 +19,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         health = totalHealth;
+        renderer = GetComponent<SpriteRenderer>();
     }
 
   
@@ -47,8 +50,18 @@ public class EnemyController : MonoBehaviour
     public void AddDamage()
     {
         health--;
+
+        StartCoroutine("VisualFeedback");
     }
 
+    private IEnumerator VisualFeedback()
+    {
+        renderer.color = Color.blue;
+
+        yield return new WaitForSeconds(0.5f);
+
+        renderer.color = Color.white;
+    }
     
 
   

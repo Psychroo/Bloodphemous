@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab78389ada4de4c4cb76d0e8d3e429ff
+guid: cc5d4379df78d1544b8f30f3e456480a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 85
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_Anim__0
+      name: "Bendicio\u0301n_Anim__0"
       rect:
         serializedVersion: 2
-        x: 32
-        y: 152
+        x: 13
+        y: 78
+        width: 766
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7373973f721965d48984475ae39ed1fc
+      internalID: 1336325290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bendicio\u0301n_Anim__1"
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 695
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3110904392a2fb746bc1ac4f52a40484
+      internalID: 2056428693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bendicio\u0301n_Anim__2"
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 87
         width: 578
-        height: 671
+        height: 778
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,50 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc23696a5425cca43a2ca1933978cd32
-      internalID: -773299779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_Anim__1
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 160
-        width: 643
-        height: 506
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1090b732e3acec5438a4947cc7e713a9
-      internalID: -1701678984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_Anim__2
-      rect:
-        serializedVersion: 2
-        x: 1311
-        y: 148
-        width: 577
-        height: 699
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19c0ab69746b4ce4988d56339f310016
-      internalID: 459425510
+      spriteID: bb0906985341ac24b96b7e6acb670289
+      internalID: -1621050823
       vertices: []
       indices: 
       edges: []
@@ -170,9 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_Anim__0: -773299779
-      Attack_Anim__1: -1701678984
-      Attack_Anim__2: 459425510
+      "Bendicio\u0301n_Anim__0": 1336325290
+      "Bendicio\u0301n_Anim__1": 2056428693
+      "Bendicio\u0301n_Anim__2": -1621050823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
