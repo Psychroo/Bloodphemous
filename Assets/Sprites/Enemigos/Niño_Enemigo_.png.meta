@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Nin\u0303o_Enemigo__0"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 64
+        width: 397
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487cb23d436ae0744bf05c8c662e0b1e
+      internalID: -1035313470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Nin\u0303o_Enemigo__1"
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 78
+        width: 397
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038f4d8c477eda244969dfaf8f92e00b
+      internalID: -249185064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Nin\u0303o_Enemigo__2"
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 68
+        width: 390
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059e4b880b84f234893294905ad53ccc
+      internalID: -1268777219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +169,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Nin\u0303o_Enemigo__0": -1035313470
+      "Nin\u0303o_Enemigo__1": -249185064
+      "Nin\u0303o_Enemigo__2": -1268777219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

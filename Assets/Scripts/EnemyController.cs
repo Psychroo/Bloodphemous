@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
 
     public int totalHealth = 3;
     public int health;
+    public float interval = 1f;
+    
 
     public static UnityEvent enemyKilled = new UnityEvent();
     public static UnityEvent enemyLived = new UnityEvent();
@@ -23,8 +25,10 @@ public class EnemyController : MonoBehaviour
         if (health <= 0)
         {
             gameObject.SetActive(false);
-        }
+        } 
     }
+
+    
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,6 +48,13 @@ public class EnemyController : MonoBehaviour
     {
         health--;
     }
+
+    
+
+  
+    
+
+    
 
     
 }
