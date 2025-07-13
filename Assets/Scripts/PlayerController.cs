@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool isFacingRight;
     public bool isAttacking;
     public bool attack1;
+    public bool attack2;
 
     private Animator animator;
 
@@ -46,10 +47,16 @@ public class PlayerController : MonoBehaviour
         }
 
         attack1 = Input.GetButtonDown("Fire1");
+        attack2 = Input.GetButtonDown("Fire2");
 
         if (attack1 && isAttacking == false)
         {
-                Attack();
+            Attack();
+        }
+
+        if (attack2 && isAttacking == false)
+        {
+            Attack2();
         }
 
     }
@@ -68,10 +75,9 @@ public class PlayerController : MonoBehaviour
     private void LateUpdate()
     {
         animator.SetBool("Idle", move == 0f);
-        animator.SetBool("IsGrounded", isGrounded);
         animator.SetFloat("VerticalVelocity", rb.velocity.y);
 
-        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack1"))
+        if ((animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack1")) || (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack2")))
         {
             isAttacking = true;
         }
@@ -83,10 +89,12 @@ public class PlayerController : MonoBehaviour
 
     void Attack()
     {
+        animator.SetTrigger("Attack1");
+    }
 
-        
-       
-        
+    void Attack2()
+    {
+        animator.SetTrigger("Attack2");
     }
 
 
