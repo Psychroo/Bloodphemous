@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9cb812e1ecc2d5e439f7eb301d7a2160
+guid: a6b273e43451f034ba56ad10d6fca195
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Nin\u0303a_Enemigo__0"
+      name: Hombre_Enemigo_2_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 169
-        width: 400
-        height: 508
+        x: 111
+        y: 35
+        width: 351
+        height: 978
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17eac377a04272646989b7d653554b23
-      internalID: -116621940
+      spriteID: 2816129b2b519974db8a739cf5ca65be
+      internalID: 1105743342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Nin\u0303a_Enemigo__1"
+      name: Hombre_Enemigo_2_1
       rect:
         serializedVersion: 2
-        x: 697
-        y: 163
-        width: 400
-        height: 509
+        x: 691
+        y: 27
+        width: 351
+        height: 976
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c084c03dea8fc6744b892fd6bcaf39c9
-      internalID: 118155757
+      spriteID: eb7025afb118a4544947a5b007363695
+      internalID: 286954713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Nin\u0303a_Enemigo__2"
+      name: Hombre_Enemigo_2_2
       rect:
         serializedVersion: 2
-        x: 1344
-        y: 174
-        width: 386
-        height: 509
+        x: 1227
+        y: 22
+        width: 383
+        height: 976
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7dd19ace170ff241a60b43a62ab6e8b
-      internalID: -861819965
+      spriteID: 5b648026102b838419f4b1c54cf35039
+      internalID: -359494999
       vertices: []
       indices: 
       edges: []
@@ -170,9 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Nin\u0303a_Enemigo__0": -116621940
-      "Nin\u0303a_Enemigo__1": 118155757
-      "Nin\u0303a_Enemigo__2": -861819965
+      Hombre_Enemigo_2_0: 1105743342
+      Hombre_Enemigo_2_1: 286954713
+      Hombre_Enemigo_2_2: -359494999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
